@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ajay Krishnan Ajith — Robotics &amp; Medical Devices</title>
+<meta name="description" content="Robotics engineer working on surgical and medical devices, embedded firmware and industrial automation. Projects, patents and publications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <div class="top__name">
+    <h1>Ajay Krishnan Ajith</h1>
+    <p class="lede">Robotics engineer. I design and build medical devices, surgical robots and the embedded firmware that runs them.</p>
+  </div>
+  <dl class="top__facts mono">
+    <dt>Now</dt><dd>Robotics Engineer, Sahas Labs</dd>
+    <dt>Before</dt><dd>Research Associate, BEES Lab, IISc Bangalore</dd>
+    <dt>Mail</dt><dd><a href="mailto:ajaykrishnan919@gmail.com">ajaykrishnan919@gmail.com</a></dd>
+    <dt>Web</dt><dd><a href="https://www.linkedin.com/in/ajay-krishnan-ajith/">linkedin.com/in/ajay-krishnan-ajith</a></dd>
+  </dl>
+</header>
+
+<section class="wrap about">
+  <p>For three years at the Indian Institute of Science, I conducted research in Prof. Hardik J. Pandya's laboratory, developing medical devices for clinical use. My projects included a continuum robot for brain surgery, an optical probe for breast cancer margin assessment, a reusable epinephrine autoinjector, and an EEG headband for newborn hearing screening. This work led to seven Indian patents, including one with PCT coverage, two journal publications, and three conference papers at ICRA, IROS, and BSN.</p>
+  <p>Since 2024, I have worked at Sahas Labs, programming a Doosan cobot cell for automated foundry sand testing and contributing to the mechanical design, electronics, and RTOS firmware of a solar panel cleaning robot. I earned my degree in Mechanical Engineering from Government Engineering College Barton Hill (2017–2021).</p>
+</section>
+
+<nav class="wrap index" aria-label="Projects">
+  <h2 class="label mono">Selected work</h2>
+  <ol>
+    <li><a href="#sand"><span class="n mono">01</span><span class="t">Automated sand testing laboratory</span><span class="w">Sahas Labs</span><span class="y mono">2024–</span></a></li>
+    <li><a href="#solar"><span class="n mono">02</span><span class="t">Solar panel cleaning robot</span><span class="w">Sahas Labs</span><span class="y mono">2024–</span></a></li>
+    <li><a href="#epishot"><span class="n mono">03</span><span class="t">EpiSHOT, reusable epinephrine autoinjector</span><span class="w">IISc</span><span class="y mono">2022</span></a></li>
+    <li><a href="#eeg"><span class="n mono">04</span><span class="t">EEG headband for hearing screening</span><span class="w">IISc</span><span class="y mono">2022–24</span></a></li>
+    <li><a href="#embedded"><span class="n mono">05</span><span class="t">Other project snapshots</span><span class="w">Various</span><span class="y mono"></span></a></li>
+    <li><a href="#research"><span class="n mono">06</span><span class="t">Other research at IISc</span><span class="w">IISc</span><span class="y mono">2021–24</span></a></li>
+  </ol>
+</nav>
+
+<!-- 01 ─────────────────────────────────────────── -->
+<section class="project wrap" id="sand">
+  <header class="p-head">
+    <span class="p-num mono">01</span>
+    <h2>Automated sand testing laboratory</h2>
+  </header>
+  <div class="p-text">
+    <p>A mechatronic cell that runs the standard foundry sand tests (green compressive strength, permeability, moisture and grain fineness) with no one standing at the bench. A Doosan collaborative arm carries specimens between stations.</p>
+    <p>I designed the system and wrote the ROS 2 manipulation tasks with MoveIt Task Constructor. A path cache lets repeated transfers reuse trajectories that were already planned instead of planning them again.</p>
+  </div>
+  <dl class="p-meta mono">
+    <dt>Where</dt><dd>Sahas Labs, Maharashtra</dd>
+    <dt>Role</dt><dd>System design, motion planning</dd>
+    <dt>Stack</dt><dd>ROS 2, MoveIt 2, MTC, Doosan cobot</dd>
+  </dl>
+  <div class="gallery">
+    <div class="row">
+      <figure style="--ar:1.778"><video controls preload="none" playsinline poster="assets/video/sand-cycle.jpg" width="1280" height="720"><source src="assets/video/sand-cycle.mp4" type="video/mp4"></video><figcaption>A full test cycle</figcaption></figure>
+      <figure style="--ar:0.5625"><video controls preload="none" playsinline poster="assets/video/sand-cycle-side.jpg" width="720" height="1280"><source src="assets/video/sand-cycle-side.mp4" type="video/mp4"></video><figcaption>Same cycle, side view</figcaption></figure>
+    </div>
+    <div class="row">
+      <figure style="--ar:0.5625"><img src="assets/img/sand-station-sm.jpg" data-full="assets/img/sand-station.jpg" width="2160" height="3840" loading="lazy" alt="Programming station next to the cell"><figcaption>Programming station</figcaption></figure>
+      <figure style="--ar:1.778"><video autoplay muted loop playsinline preload="metadata" poster="assets/video/sand-pick.jpg" width="1280" height="720"><source src="assets/video/sand-pick.mp4" type="video/mp4"></video><figcaption>Pick from the testing station</figcaption></figure>
+    </div>
+    <div class="row">
+      <figure style="--ar:1.333"><img src="assets/img/sand-cell-sm.jpg" data-full="assets/img/sand-cell.jpg" width="2048" height="1536" loading="lazy" alt="Cobot inside the test cell"><figcaption>The cell</figcaption></figure>
+      <figure style="--ar:0.5625"><video controls preload="none" playsinline poster="assets/video/sand-transfer.jpg" width="720" height="1280"><source src="assets/video/sand-transfer.mp4" type="video/mp4"></video><figcaption>Specimen transfer</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 02 ─────────────────────────────────────────── -->
+<section class="project wrap" id="solar">
+  <header class="p-head">
+    <span class="p-num mono">02</span>
+    <h2>Solar panel cleaning robot</h2>
+  </header>
+  <div class="p-text">
+    <p>A tracked robot that drives along photovoltaic arrays and sweeps them with rotating brushes. I worked across the whole robot: I contributed to its mechanical design, designed its electronic hardware, and wrote its entire firmware stack on an STM32H563 running Azure RTOS ThreadX. The firmware is split into deterministic threads for motors, commands, telemetry, UART and battery.</p>
+    <ul>
+      <li>Mechanical design of the robot, from CAD through to the built prototype shown below.</li>
+      <li>Electronic hardware design for the robot.</li>
+      <li>CANopen SDO motor-control library for IDS-C servo drives over FDCAN.</li>
+      <li>Firmware validated on hardware. Field trials are ongoing.</li>
+    </ul>
+  </div>
+  <dl class="p-meta mono">
+    <dt>Where</dt><dd>Sahas Labs, Maharashtra</dd>
+    <dt>Role</dt><dd>Mechanical design, electronics hardware, embedded firmware</dd>
+    <dt>Stack</dt><dd>STM32H563, ThreadX, CANopen / FDCAN, I²C, UART</dd>
+  </dl>
+  <div class="gallery">
+    <div class="row">
+      <figure style="--ar:1.778"><video controls preload="none" playsinline poster="assets/video/solar-run.jpg" width="1280" height="720"><source src="assets/video/solar-run.mp4" type="video/mp4"></video><figcaption>Cleaning pass across a test panel</figcaption></figure>
+    </div>
+    <div class="row">
+      <figure style="--ar:1.333"><img src="assets/img/solar-panel-01-sm.jpg" data-full="assets/img/solar-panel-01.jpg" width="1200" height="900" loading="lazy" alt="Solar cleaning robot on a panel"><figcaption>On a full-size module</figcaption></figure>
+      <figure style="--ar:1.778"><video controls preload="none" playsinline poster="assets/video/solar-edge.jpg" width="1280" height="720"><source src="assets/video/solar-edge.mp4" type="video/mp4"></video><figcaption>Approaching the panel edge</figcaption></figure>
+    </div>
+    <div class="row">
+      <figure style="--ar:0.752"><img src="assets/img/solar-top-sm.jpg" data-full="assets/img/solar-top.jpg" width="963" height="1280" loading="lazy" alt="Top view of the robot"><figcaption>Top view</figcaption></figure>
+      <figure style="--ar:0.752"><img src="assets/img/solar-brush-sm.jpg" data-full="assets/img/solar-brush.jpg" width="963" height="1280" loading="lazy" alt="Brush module close-up"><figcaption>Brush module and track</figcaption></figure>
+      <figure style="--ar:0.752"><img src="assets/img/solar-outdoor-sm.jpg" data-full="assets/img/solar-outdoor.jpg" width="963" height="1280" loading="lazy" alt="Robot on an outdoor panel"><figcaption>Outdoors</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 03 ─────────────────────────────────────────── -->
+<section class="project wrap" id="epishot">
+  <header class="p-head">
+    <span class="p-num mono">03</span>
+    <h2>EpiSHOT</h2>
+    <p class="p-sub">A reusable epinephrine autoinjector</p>
+  </header>
+  <div class="p-text">
+    <p>Single-use autoinjectors are expensive, and people with severe allergies need to carry them everywhere. EpiSHOT is a reusable alternative with three levels of safety, a needle that retracts on its own after the dose, and an ergonomic grip. We built it, then cycled it more than 500 times to test the mechanism.</p>
+    <p>It won the <strong>James Dyson Award 2022</strong> as the national winner for India.</p>
+  </div>
+  <dl class="p-meta mono">
+    <dt>Where</dt><dd>BEES Lab, IISc Bangalore</dd>
+    <dt>Role</dt><dd>Mechanism design, prototyping</dd>
+    <dt>Patent</dt><dd>IN 202241018326 (granted 2024), PCT/IN2022/050795</dd>
+  </dl>
+  <div class="gallery">
+    <div class="row">
+      <figure style="--ar:1.397"><img src="assets/img/epishot-device-sm.jpg" data-full="assets/img/epishot-device.jpg" width="648" height="464" loading="lazy" alt="EpiSHOT prototype"><figcaption>Prototype</figcaption></figure>
+      <figure style="--ar:1.625"><img src="assets/img/epishot-press-sm.jpg" data-full="assets/img/epishot-press.jpg" width="1550" height="954" loading="lazy" alt="Press coverage of the James Dyson Award"><figcaption>Press after the Dyson Award</figcaption></figure>
+      <figure style="--ar:1.333"><img src="assets/img/epishot-team-sm.jpg" data-full="assets/img/epishot-team.jpg" width="516" height="387" loading="lazy" alt="Group photo"><figcaption>With colleagues</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 04 ─────────────────────────────────────────── -->
+<section class="project wrap" id="eeg">
+  <header class="p-head">
+    <span class="p-num mono">04</span>
+    <h2>EEG headband for hearing screening</h2>
+  </header>
+  <div class="p-text">
+    <p>Hearing tests on newborns depend on recording tiny evoked potentials, and those recordings are only as good as the electrode contact. I designed a modular headband that adjusts to head size and holds the electrodes against the skin steadily enough to extract auditory brainstem responses (ABR) and mismatch negativity (MMN).</p>
+    <ul>
+      <li>Published in <em>Biomedical Signal Processing and Control</em>, 2024.</li>
+      <li>1st runner-up at the Siemens SmartX Health Hackathon 2022 and at SHIFT 2022 (Siemens Healthineers).</li>
+    </ul>
+  </div>
+  <dl class="p-meta mono">
+    <dt>Where</dt><dd>BEES Lab, IISc Bangalore</dd>
+    <dt>Role</dt><dd>Headband design, fabrication</dd>
+    <dt>Patent</dt><dd>IN 388085-001 (granted 2024)</dd>
+  </dl>
+  <div class="gallery">
+    <div class="row">
+      <figure style="--ar:1.778"><img src="assets/img/eeg-band-front-sm.jpg" data-full="assets/img/eeg-band-front.jpg" width="4032" height="2268" loading="lazy" alt="EEG headband, front view"><figcaption>Headband</figcaption></figure>
+      <figure style="--ar:0.5625"><img src="assets/img/eeg-band-top-sm.jpg" data-full="assets/img/eeg-band-top.jpg" width="2268" height="4032" loading="lazy" alt="EEG headband, top view"><figcaption>Top view</figcaption></figure>
+      <figure style="--ar:0.75"><img src="assets/img/eeg-electrodes-sm.jpg" data-full="assets/img/eeg-electrodes.jpg" width="3024" height="4032" loading="lazy" alt="Electrode holder version on a test head"><figcaption>Electrode holder version</figcaption></figure>
+    </div>
+    <div class="row">
+      <figure style="--ar:1.333"><img src="assets/img/eeg-clinical-01-sm.jpg" data-full="assets/img/eeg-clinical-01.jpg" width="2048" height="1536" loading="lazy" alt="Headband during a newborn recording"><figcaption>Recording on a newborn</figcaption></figure>
+      <figure style="--ar:1.333"><img src="assets/img/eeg-clinical-02-sm.jpg" data-full="assets/img/eeg-clinical-02.jpg" width="2048" height="1536" loading="lazy" alt="Headband with electrodes during recording"><figcaption>Electrode placement</figcaption></figure>
+      <figure style="--ar:1.333"><img src="assets/img/eeg-clinical-03-sm.jpg" data-full="assets/img/eeg-clinical-03.jpg" width="2048" height="1536" loading="lazy" alt="Headband fit, rear view"><figcaption>Fit from behind</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 05 ─────────────────────────────────────────── -->
+<section class="project wrap" id="embedded">
+  <header class="p-head">
+    <span class="p-num mono">05</span>
+    <h2>Other project snapshots</h2>
+  </header>
+  <div class="p-text">
+    <p>Pictures from other projects and embedded work: STM32 controller boards, power boards, the enclosures they go into, and prototypes on the bench.</p>
+  </div>
+  <dl class="p-meta mono">
+    <dt>Tools</dt><dd>STM32 H5 / F3 / F4, CubeMX, CubeIDE, C/C++</dd>
+  </dl>
+  <div class="gallery">
+    <div class="row">
+      <figure style="--ar:1.372"><img src="assets/img/bench-rig-sm.jpg" data-full="assets/img/bench-rig.jpg" width="925" height="674" loading="lazy" alt="Prototype on the bench"><figcaption>Prototype on the bench</figcaption></figure>
+      <figure style="--ar:0.75"><img src="assets/img/pcb-controller-sm.jpg" data-full="assets/img/pcb-controller.jpg" width="3024" height="4032" loading="lazy" alt="STM32 controller board"><figcaption>Controller board</figcaption></figure>
+      <figure style="--ar:0.5625"><img src="assets/img/pcb-enclosure-sm.jpg" data-full="assets/img/pcb-enclosure.jpg" width="2209" height="3928" loading="lazy" alt="Board mounted in its enclosure"><figcaption>Mounted in the enclosure</figcaption></figure>
+    </div>
+    <div class="row">
+      <figure style="--ar:0.75"><img src="assets/img/pcb-power-sm.jpg" data-full="assets/img/pcb-power.jpg" width="3024" height="4032" loading="lazy" alt="Power board"><figcaption>Power board</figcaption></figure>
+      <figure style="--ar:0.5625"><img src="assets/img/pcb-power-assembled-sm.jpg" data-full="assets/img/pcb-power-assembled.jpg" width="720" height="1280" loading="lazy" alt="Power board with cell fitted"><figcaption>Assembled, with cell</figcaption></figure>
+      <figure style="--ar:0.75"><img src="assets/img/pcb-pair-sm.jpg" data-full="assets/img/pcb-pair.jpg" width="1080" height="1440" loading="lazy" alt="Pair of driver boards"><figcaption>Driver boards</figcaption></figure>
+    </div>
+    <div class="row">
+      <figure style="--ar:1.333"><img src="assets/img/pcb-handheld-sm.jpg" data-full="assets/img/pcb-handheld.jpg" width="2048" height="1536" loading="lazy" alt="STM32 board with USB-C and battery and solar inputs"><figcaption>STM32 board, USB-C with battery and solar inputs</figcaption></figure>
+      <figure style="--ar:1.333"><img src="assets/img/pcb-display-bench-sm.jpg" data-full="assets/img/pcb-display-bench.jpg" width="2048" height="1536" loading="lazy" alt="Board with display connector under test"><figcaption>Board with display connector, under test</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 06 ─────────────────────────────────────────── -->
+<section class="wrap list-block" id="research">
+  <header class="p-head">
+    <span class="p-num mono">06</span>
+    <h2>Other research at IISc</h2>
+  </header>
+  <dl class="entries">
+    <dt>Continuum surgical robot</dt>
+    <dd>An MRI-compatible, tendon-driven continuum robot for outlining brain tumours. Its flexure joints are 3D printed and generated parametrically for each application. Tip position was checked with optical encoder feedback under stepper actuation. <span class="mono src">ICRA 2023 · IROS 2023 · BSN 2023</span></dd>
+    <dt>Diffuse reflectance spectroscopy probe</dt>
+    <dd>A handheld probe with LEDs at several wavelengths, built to tell tumour from healthy breast tissue during surgery. Its biocompatible enclosure is SLA printed. <span class="mono src">Scientific Reports 2025 · Patent IN442474-001</span></dd>
+    <dt>Fluorescence imaging system</dt>
+    <dd>Optical design for a handheld imager with paired NIR and visible cameras, used to watch blood flow during surgery with ICG dye. I worked out the field of view, working distance and filter specifications.</dd>
+  </dl>
+
+  <h3 class="label mono">Earlier</h3>
+  <dl class="entries entries--small">
+    <dt>CNC router</dt><dd>A 3-axis machine with a 1000 × 1000 mm bed, built for about $1,200, that cuts MDF and aluminium 6061. I did the mechanical design, electronics and firmware.</dd>
+    <dt>Quadcopter</dt><dd>A carbon-fibre airframe with a 3 kg payload, a Pixhawk controller and ultrasonic obstacle detection. Flight tested with autonomous waypoint navigation.</dd>
+    <dt>Al–SS diffusion bonding</dt><dd>With ISRO. We studied bonding parameters for aluminium to stainless steel joints in spacecraft fuel chambers, and the component qualified for space application requirements.</dd>
+    <dt>Vehicle black box</dt><dd>An ATmega328p data recorder that detects collisions and speeding, logs GPS position and alerts emergency contacts. Tested on a car.</dd>
+    <dt>Shell Eco-marathon</dt><dd>Team manager of Team Pravega, the college's first natural-body electric vehicle. We added PCM-based battery cooling to extend range. Circular Economy Award, Shell Eco-marathon Asia 2020.</dd>
+  </dl>
+</section>
+
+<section class="wrap list-block" id="papers">
+  <h2 class="label mono">Publications</h2>
+  <ol class="refs">
+    <li>A. M. Kamal, K. S. Rajput, <b>A. K. Ajith</b>, V. S. S. Vangeti, H. J. Pandya. Design and development of a portable multiwavelength LED-based diffuse reflectance spectroscopy tool for rapid breast cancer identification. <i>Scientific Reports</i>, 2025.</li>
+    <li>R. K. Joshi, Manu K S, Hari R S, <b>Ajay Krishnan A</b>, M. Jayachandra, M. Dandi, H. J. Pandya. Automated ABR and MMN extraction using customized headband for hearing screening. <i>Biomedical Signal Processing and Control</i>, 2024.</li>
+    <li>Arjun B S, <b>Ajay Krishnan A</b>, H. J. Pandya. Soft-robotic probe for tissue characterization using TinyML. <i>IEEE/RSJ IROS</i>, Detroit, 2023.</li>
+    <li>Arjun B S, <b>Ajay Krishnan A</b>, H. J. Pandya. MRI-compatible patient-specific continuum robots using parametric modelling. <i>IEEE BSN</i>, Boston, 2023.</li>
+    <li>Arjun B S, <b>Ajay Krishnan A</b>, H. J. Pandya. 3D printable application-specific continuum robots using parametric modelling. <i>IEEE ICRA</i>, London, 2023.</li>
+    <li class="muted">Haripriya P, <b>Ajay Krishnan A</b>, et al. LivSens-Q: a portable nanomaterial-coated QCM sensor array for exhaled breath VOC analysis in hepatic encephalopathy. <i>Sensors and Actuators</i>, under review.</li>
+  </ol>
+
+  <h2 class="label mono">Patents</h2>
+  <table class="patents">
+    <tr><td>Portable wearable headband for auditory and visual evoked response</td><td class="mono">IN 388085-001</td><td class="mono">2024</td></tr>
+    <tr><td>Reusable drug delivery device (EpiSHOT)</td><td class="mono">IN 202241018326 · PCT</td><td class="mono">2024</td></tr>
+    <tr><td>Reusable multi-angle intradermal drug delivery device</td><td class="mono">IN 202241033770</td><td class="mono">2025</td></tr>
+    <tr><td>Multiplexed electrochemical sensor</td><td class="mono">IN 572340</td><td class="mono">2025</td></tr>
+    <tr><td>Portable supporting device for impedance analyzer</td><td class="mono">IN 202341082321</td><td class="mono">2025</td></tr>
+    <tr><td>Portable polarization-based optical system for tissue characterization</td><td class="mono">IN442474-001</td><td class="mono">2026</td></tr>
+    <tr><td>Method and system for real-time monitoring of fluids</td><td class="mono">IN 202321003674</td><td class="mono">filed</td></tr>
+  </table>
+
+  <h2 class="label mono">Recognition</h2>
+  <ul class="plain">
+    <li>James Dyson Award 2022, national winner (India)</li>
+    <li>Siemens SmartX Health Hackathon 2022, 1st runner-up</li>
+    <li>SHIFT Hackathon 2022 (Siemens Healthineers), 1st runner-up</li>
+    <li>Shell Eco-marathon Asia 2020, Circular Economy Award</li>
+    <li>IEEE Arduino Logic Contest, Travancore Section, 2nd place</li>
+  </ul>
+</section>
+
+<footer class="wrap foot mono">
+  <span>Ajay Krishnan Ajith</span>
+  <a href="mailto:ajaykrishnan919@gmail.com">ajaykrishnan919@gmail.com</a>
+  <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
+</footer>
+
+<dialog id="viewer" aria-label="Image viewer">
+  <img alt="">
+  <p class="viewer__cap mono"></p>
+  <button class="viewer__btn viewer__prev" type="button" aria-label="Previous image">←</button>
+  <button class="viewer__btn viewer__next" type="button" aria-label="Next image">→</button>
+  <button class="viewer__btn viewer__close" type="button" aria-label="Close">×</button>
+</dialog>
+
+<script src="main.js"></script>
+</body>
+</html>
