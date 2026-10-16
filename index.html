@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ajay Krishnan Ajith — Robotics &amp; Medical Devices</title>
+<title>Ajay Krishnan Ajith — Robotics & Medical Devices</title>
 <meta name="description" content="Robotics engineer working on surgical and medical devices, embedded firmware and industrial automation. Projects, patents and publications.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
 </header>
 
 <section class="wrap about">
-  <p>For three years at the Indian Institute of Science, I conducted research in Prof. Hardik J. Pandya's laboratory, developing medical devices for clinical use. My projects included a continuum robot for brain surgery, an optical probe for breast cancer margin assessment, a reusable epinephrine autoinjector, and an EEG headband for newborn hearing screening. This work led to seven Indian patents, including one with PCT coverage, two journal publications, and three conference papers at ICRA, IROS, and BSN.</p>
+  <p>For three years at the Indian Institute of Science, I conducted research in Prof. Hardik J. Pandya's laboratory, developing medical devices for clinical use. My projects included a continuum robot for brain surgery, an optical probe for breast cancer margin assessment, a reusable epinephrine autoinjector, and an EEG headband for newborn hearing screening. This work led to six granted Indian patents (four utility, two design), one with PCT coverage, and one pending application, two journal publications, and three conference papers at ICRA, IROS, and BSN.</p>
   <p>Since 2024, I have worked at Sahas Labs, programming a Doosan cobot cell for automated foundry sand testing and contributing to the mechanical design, electronics, and RTOS firmware of a solar panel cleaning robot. I earned my degree in Mechanical Engineering from Government Engineering College Barton Hill (2017–2021).</p>
 </section>
 
@@ -50,12 +50,12 @@
   </header>
   <div class="p-text">
     <p>A mechatronic cell that runs the standard foundry sand tests (green compressive strength, permeability, moisture and grain fineness) with no one standing at the bench. A Doosan collaborative arm carries specimens between stations.</p>
-    <p>I designed the system and wrote the ROS 2 manipulation tasks with MoveIt Task Constructor. A path cache lets repeated transfers reuse trajectories that were already planned instead of planning them again.</p>
+    <p>I designed the system and built the ROS 2 manipulation pipeline on a Doosan A0912 arm with MoveIt Task Constructor, covering object transfer and contact-rich part insertion. A path cache lets repeated transfers reuse trajectories that were already planned instead of planning them again.</p>
   </div>
   <dl class="p-meta mono">
     <dt>Where</dt><dd>Sahas Labs, Maharashtra</dd>
     <dt>Role</dt><dd>System design, motion planning</dd>
-    <dt>Stack</dt><dd>ROS 2, MoveIt 2, MTC, Doosan cobot</dd>
+    <dt>Stack</dt><dd>ROS 2, MoveIt 2, MTC, Doosan A0912</dd>
   </dl>
   <div class="gallery">
     <div class="row">
@@ -123,7 +123,7 @@
   <dl class="p-meta mono">
     <dt>Where</dt><dd>BEES Lab, IISc Bangalore</dd>
     <dt>Role</dt><dd>Mechanism design, prototyping</dd>
-    <dt>Patent</dt><dd>IN 202241018326 (granted 2024), PCT/IN2022/050795</dd>
+    <dt>Patent</dt><dd>Granted, IN 544781 · PCT/IN2022/050795</dd>
   </dl>
   <div class="gallery">
     <div class="row">
@@ -150,7 +150,7 @@
   <dl class="p-meta mono">
     <dt>Where</dt><dd>BEES Lab, IISc Bangalore</dd>
     <dt>Role</dt><dd>Headband design, fabrication</dd>
-    <dt>Patent</dt><dd>IN 388085-001 (granted 2024)</dd>
+    <dt>Patent</dt><dd>Design patent IN 445936-001 (granted 2025)</dd>
   </dl>
   <div class="gallery">
     <div class="row">
@@ -204,9 +204,13 @@
   </header>
   <dl class="entries">
     <dt>Continuum surgical robot</dt>
-    <dd>An MRI-compatible, tendon-driven continuum robot for outlining brain tumours. Its flexure joints are 3D printed and generated parametrically for each application. Tip position was checked with optical encoder feedback under stepper actuation. <span class="mono src">ICRA 2023 · IROS 2023 · BSN 2023</span></dd>
+    <dd>An MRI-compatible, tendon-driven continuum robot for outlining brain tumours. Its flexure joints are 3D printed and generated parametrically for each application. Tip position was checked with optical encoder feedback under stepper actuation. <span class="mono src">ICRA 2023 · BSN 2023</span></dd>
+    <dt>Soft-robotic tissue probe</dt>
+    <dd>A soft-robotic probe for tissue characterization, with the classification running on-device using TinyML. <span class="mono src">IROS 2023</span></dd>
     <dt>Diffuse reflectance spectroscopy probe</dt>
-    <dd>A handheld probe with LEDs at several wavelengths, built to tell tumour from healthy breast tissue during surgery. Its biocompatible enclosure is SLA printed. <span class="mono src">Scientific Reports 2025 · Patent IN442474-001</span></dd>
+    <dd>A handheld probe with LEDs at several wavelengths, built to tell tumour from healthy breast tissue during surgery. Its biocompatible enclosure is SLA printed. <span class="mono src">Scientific Reports 2025</span></dd>
+    <dt>Polarization-based optical system</dt>
+    <dd>A portable polarization-based optical system for tissue characterization. <span class="mono src">Design patent IN 442474-001</span></dd>
     <dt>Fluorescence imaging system</dt>
     <dd>Optical design for a handheld imager with paired NIR and visible cameras, used to watch blood flow during surgery with ICG dye. I worked out the field of view, working distance and filter specifications.</dd>
   </dl>
@@ -234,13 +238,13 @@
 
   <h2 class="label mono">Patents</h2>
   <table class="patents">
-    <tr><td>Portable wearable headband for auditory and visual evoked response</td><td class="mono">IN 388085-001</td><td class="mono">2024</td></tr>
-    <tr><td>Reusable drug delivery device (EpiSHOT)</td><td class="mono">IN 202241018326 · PCT</td><td class="mono">2024</td></tr>
-    <tr><td>Reusable multi-angle intradermal drug delivery device</td><td class="mono">IN 202241033770</td><td class="mono">2025</td></tr>
-    <tr><td>Multiplexed electrochemical sensor</td><td class="mono">IN 572340</td><td class="mono">2025</td></tr>
-    <tr><td>Portable supporting device for impedance analyzer</td><td class="mono">IN 202341082321</td><td class="mono">2025</td></tr>
-    <tr><td>Portable polarization-based optical system for tissue characterization</td><td class="mono">IN442474-001</td><td class="mono">2026</td></tr>
-    <tr><td>Method and system for real-time monitoring of fluids</td><td class="mono">IN 202321003674</td><td class="mono">filed</td></tr>
+    <tr><td>A Portable Wearable Headband For Obtaining Auditory And Visual Evoked Response<span class="inv">Ajay Krishnan A, Rathin, Hari R S, and Hardik J. Pandya</span></td><td class="mono">Design 445936-001<span class="inv">Indian Design Patent</span></td><td class="mono">Registered<span class="inv">Jan 29, 2025</span></td></tr>
+    <tr><td>A Portable Polarization-Based Optical System For Tissue Characterization<span class="inv">Ajay Krishnan A, Twinkle Bagha, Hardik J. Pandya</span></td><td class="mono">Design 442474-001<span class="inv">Indian Design Patent</span></td><td class="mono">Registered<span class="inv">Dec 30, 2024</span></td></tr>
+    <tr><td>Reusable Drug Delivery Device<span class="inv">Arjun B S, Ajay Krishnan A, Adithya Kumar, Paramesh H, Hardik J. Pandya</span></td><td class="mono">544781<span class="inv">Application 202241018326 · PCT/IN2022/050795</span></td><td class="mono">Granted<span class="inv">Jul 11, 2024</span></td></tr>
+    <tr><td>A Reusable Multiangle Intradermal Drug Delivery Device<span class="inv">Arjun B S, Ajay Krishnan A, Pushkraj Anil Janwadkar, Hardik J. Pandya</span></td><td class="mono">558281<span class="inv">Application 202241033770</span></td><td class="mono">Granted<span class="inv">Jan 21, 2025</span></td></tr>
+    <tr><td>Method And System For Real-Time Monitoring Of Fluids<span class="inv">Ajay Krishnan A, Arjun B S, Hari R S, Pushkraj Anil Janwadkar, Hardik J. Pandya</span></td><td class="mono">Application 202321003674<span class="inv">Indian Patent Application</span></td><td class="mono">Filed</td></tr>
+    <tr><td>Portable Supporting Device For Impedance Analyzer<span class="inv">Ajay Krishnan A, Anil Vishnu G K, Hari R S, Hardik J. Pandya</span></td><td class="mono">571422<span class="inv">Application 202341082321</span></td><td class="mono">Granted<span class="inv">Sep 30, 2025</span></td></tr>
+    <tr><td>A Multiplexed Electrochemical Sensor<span class="inv">Hardik J. Pandya, Anil Vishnu G K, Hari R S, Ajay Krishnan A, Sundar Swaminathan, Vivekanand Jha, Aksa Fathima, V. Srividhyasakthi</span></td><td class="mono">572340<span class="inv">Application 202341085182</span></td><td class="mono">Granted<span class="inv">Oct 21, 2025</span></td></tr>
   </table>
 
   <h2 class="label mono">Recognition</h2>
@@ -258,14 +262,6 @@
   <a href="mailto:ajaykrishnan919@gmail.com">ajaykrishnan919@gmail.com</a>
   <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
 </footer>
-
-<dialog id="viewer" aria-label="Image viewer">
-  <img alt="">
-  <p class="viewer__cap mono"></p>
-  <button class="viewer__btn viewer__prev" type="button" aria-label="Previous image">←</button>
-  <button class="viewer__btn viewer__next" type="button" aria-label="Next image">→</button>
-  <button class="viewer__btn viewer__close" type="button" aria-label="Close">×</button>
-</dialog>
 
 <script src="main.js"></script>
 </body>

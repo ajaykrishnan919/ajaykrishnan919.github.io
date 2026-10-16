@@ -244,3 +244,7 @@ figcaption::before { content: "fig. " counter(fig, decimal-leading-zero) " · ";
   #viewer { padding: 48px 8px 56px; }
   .viewer__prev, .viewer__next { top: auto; bottom: 8px; transform: none; }
 }
+
+.patents .inv { display: block; margin-top: 3px; font: 13px/1.45 var(--sans); color: var(--ink-3); white-space: normal; }
+.patents td.mono .inv { font-family: var(--mono); font-size: 12px; }
+.patents td:last-child .inv { white-space: nowrap; }
